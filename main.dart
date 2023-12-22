@@ -5,6 +5,10 @@
      intList.sort(); 
      print("Smallest value in the list: ${intList.first}"); 
      print("Greatest value in the list: ${intList.last}"); 
+    
+    //  Answer Q1:
+    //  Smallest value in the list: 3
+    //  Largest value in the list: 121
 
 
 // Q.2: remove all false values from below list by using removeWhere or retainWhere property.
@@ -13,6 +17,9 @@
     usersEligibility.removeWhere((String) => String == "eligible");
     print(usersEligibility);
 
+    // Answer Q2:
+    // [John, Alice, Mike, Sarah, Tom]
+
 
 // Q.4: Write a Dart code that takes in a list of strings and removes any duplicate elements,
 // returning a new list without duplicates.The order of elements in the new list should be the same as
@@ -20,6 +27,9 @@
 List myList = ['Danish', 'Ali', 'Bilal', 'Mudasir', 'Ali', 'Danish'];
   List removeDuplicates = [...{...myList}];
   print(removeDuplicates);
+
+    // Answer Q4;
+    // [Danish, Ali, Bilal, Mudasir]
 
 
 
@@ -42,3 +52,6 @@ List myList = ['Danish', 'Ali', 'Bilal', 'Mudasir', 'Ali', 'Danish'];
   mathMarks.removeWhere((key, value) => value <= 30);
   print(mathMarks);
   }
+
+  // Answer Q6:
+  // {mark: 32, harry: 88, raj: 69}
